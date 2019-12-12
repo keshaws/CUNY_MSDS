@@ -1,6 +1,3 @@
-USE [CHS_DOC_DEV]
-GO
-
 INSERT INTO [dbo].[EMPLOYEE_TABLE]
            ([NAME]
            ,[SALARY]
@@ -9,6 +6,5 @@ INSERT INTO [dbo].[EMPLOYEE_TABLE]
      VALUES
            ('JOHN', 67000, 'HR','Manager')
 
-GO
 
 
