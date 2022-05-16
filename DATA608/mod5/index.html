@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Assign5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+<h2>CUNY MSDS DATA 608</h2>
+<h2>Niteen Kumar</h2>
+<h3>Assignment 5 </h3>
+
+<h2>Part 1</h2>
+<h3>1. Create a function to reverse any word that you type in. This can be typed into either an input box or an alert
+    box, and then print the result in a box or on the webpage.</h3>
+
+<!-- part 1-1 -->
+<div>
+    <form name='reverse'>
+        <input type="text" size="14" name='raw'>
+        <input type="button" value="Reverse Me" onClick=print_reverse()>
+    </form>
+
+    <!-- div to display q1 result -->
+    <div id="part1_1"></div>
+
+    <!-- functions to reverse string and print the results -->
+    <script type="text/javascript" src="part1_1.js"></script>
+</div>
+
+<div>
+    <h3>2. Create a function that takes an input number, and prints a table with the first 20 multiples of the number,
+        in order 5x4</h3>
+
+    <!-- part 1-2 -->
+    <form name="inputNumber">
+        <input id="n" type="number" size="5">
+        <input type="button" value="Print a table" onClick="display_table();">
+    </form>
+    <br>
+
+    <!-- div to display q2 result -->
+    <div id="part1_2"></div>
+
+    <!-- functions to print a table from input -->
+    <script type="text/javascript" src="part1_2.js"></script>
+</div>
+
+<!-- part 2 -->
+
+<body onload="loadData()">
+<div>
+    <h2>Part 2</h2>
+    <h3>Write a function to load the presidents.csv data and display the data as an html table.
+        Write a function that will return that president’s height & weight when you type it in.
+        This can be typed into either an input box or an alert box, and then print the result in a box or on the web
+        page.</h3>
+
+    <!-- Input form-->
+    <label for="presidentSearch">Search President Name for Height and Weight: </label>
+    <input type="search" class="form-control" id="presidentSearch" placeholder="Type the name of President">
+
+    <div id="datatable"></div>
+
+</div>
+
+<!-- Load part2.js-->
+<script type='text/javascript' src='part2.js'></script>
+</body>
+
+</body>
+
+</html>
